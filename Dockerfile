@@ -1,3 +1,4 @@
-FROM httpd:2.4
-ADD test.html /usr/local/apache2/htdocs/
+FROM centos
+ADD start.sh /
+ENTRYPOINT bash start.sh
 
